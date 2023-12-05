@@ -1,7 +1,7 @@
+require('dotenv').config()
 const http = require('http');
 const mysql = require('mysql2');
 
-const DATABASE_URL = `mysql://4fpyhaslthjr7gjn6qoz:pscale_pw_fgYML7NPBj1Tcm804urlTf8h1Hq9PHYeQ9rCqsrxhnT@aws.connect.psdb.cloud/nomes?ssl={"rejectUnauthorized":true}`
 let connection;
 
 const servidorWEB = http.createServer((req, res) => {
@@ -30,6 +30,6 @@ const servidorWEB = http.createServer((req, res) => {
 
 servidorWEB.listen(5000, () => {
     console.log("Servidor tá ON meu chapa!")
-    connection = mysql.createConnection(DATABASE_URL)
+    connection = mysql.createConnection(process.env.DATABASE_URL)
 })
 
