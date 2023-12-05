@@ -1,7 +1,7 @@
 const http = require('http');
 const mysql = require('mysql2');
 
-const DATABASE_URL = `mysql://gk5py840r5rmi921mvve:pscale_pw_QpubJ1VJUhcSKU6I1Lqldpamu1EPz3ftZN3UZVWYvkb@aws.connect.psdb.cloud/nomes?ssl={"rejectUnauthorized":true}`
+const DATABASE_URL = `mysql://4na1qjx9fu1yx4nlvdzj:pscale_pw_LjJcf76Fp4fcEVdFN2DZfYTXtylNIWdr3qOz89xVdPx@aws.connect.psdb.cloud/nomes?ssl={"rejectUnauthorized":true}`
 let connection;
 
 let nomes = [
