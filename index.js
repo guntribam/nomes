@@ -1,14 +1,8 @@
 const http = require('http');
 const mysql = require('mysql2');
 
-const DATABASE_URL = `mysql://4na1qjx9fu1yx4nlvdzj:pscale_pw_LjJcf76Fp4fcEVdFN2DZfYTXtylNIWdr3qOz89xVdPx@aws.connect.psdb.cloud/nomes?ssl={"rejectUnauthorized":true}`
+const DATABASE_URL = `mysql://4fpyhaslthjr7gjn6qoz:pscale_pw_fgYML7NPBj1Tcm804urlTf8h1Hq9PHYeQ9rCqsrxhnT@aws.connect.psdb.cloud/nomes?ssl={"rejectUnauthorized":true}`
 let connection;
-
-let nomes = [
-    {id: 1, nome: "Gunter"}, 
-    {id: 2, nome: "Kaulen"},
-    {id: 3, nome: "Lontrer"}
-]
 
 const servidorWEB = http.createServer((req, res) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
