@@ -28,7 +28,7 @@ const servidorWEB = http.createServer((req, res) => {
     }
 })
 
-servidorWEB.listen(5000, () => {
+servidorWEB.listen(80, () => {
     console.log("Servidor tá ON meu chapa!")
     connection = mysql.createConnection(process.env.DATABASE_URL)
 })

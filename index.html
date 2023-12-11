@@ -13,7 +13,7 @@
         let nomes;
 
         function buscarLista(){
-            fetch('http://localhost:5000/api')
+            fetch('https://nomes-alt.onrender.com/api')
                 .then(response => response.json())
                 .then(dados => renderizarLista(dados))
         }
